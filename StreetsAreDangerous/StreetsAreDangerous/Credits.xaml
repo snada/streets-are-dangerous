@@ -1,0 +1,92 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="StreetsAreDangerous.Credits"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="800"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot è la griglia radice in cui viene inserito tutto il contenuto della pagina-->
+    <Grid x:Name="LayoutRoot">
+    	<Grid.Background>
+    		<ImageBrush Stretch="Fill" ImageSource="menubackground3.png"/>
+    	</Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contiene il nome dell'applicazione e il titolo della pagina-->
+        <!--ContentPanel - inserire ulteriore contenuto qui-->
+        <Image Source="ombra.png" Grid.RowSpan="2"/><!--ContentPanel - inserire ulteriore contenuto qui-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+        	<Image HorizontalAlignment="Left" Margin="-48,24,0,36" Width="470" Source="credits.png" Height="420"/>
+
+            <!-- GRID PER IL TESTO! -->
+            <Grid Height="93" HorizontalAlignment="Left" Margin="440,17,0,0" Name="MadeByGrid" VerticalAlignment="Top" Width="315">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock Name="MadeByTextBlock" Text="" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" FontSize="24" TextAlignment="Center" />
+                <TextBlock Name="StefanoTextBlock" Text="Stefano Nada" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" FontStyle="Italic" TextAlignment="Center"/>
+            </Grid>
+
+            <Grid Height="75" HorizontalAlignment="Left" Margin="440,118,0,0" Name="MusicByGrid" VerticalAlignment="Top" Width="315">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock Name="MusicByTextBlock" Text="" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" FontSize="24" TextAlignment="Center" />
+                <TextBlock Name="ChiaraTextBlock" Text="Chiara Nada" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" FontStyle="Italic" TextAlignment="Center"/>
+            </Grid>
+
+            <Grid Height="164" HorizontalAlignment="Left" Margin="440,214,0,0" Name="SpecialThanksGrid" VerticalAlignment="Top" Width="315">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock Name="ThanksToTextBlock" Text="" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" FontSize="24" TextAlignment="Center" />
+                <TextBlock Name="ThanksToNamesTextBlock" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" FontStyle="Italic" TextAlignment="Center" TextWrapping="Wrap" >
+                    <Run Text="Marco Sannicandro" />
+                    <LineBreak />
+                    <Run Text="Ruben Caliandro" />
+                    <LineBreak />
+                    <Run Text="Fabrizio Sanfilippo" />
+                    <LineBreak />
+                    <Run Text="Giulio Mazzocco" />
+                </TextBlock>
+            </Grid>
+
+            <Grid Height="75" HorizontalAlignment="Left" Margin="440,400,0,0" Name="DedicatedToGrid" VerticalAlignment="Top" Width="315">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock Name="DedicatedToTextBlock" Text="" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" TextWrapping="Wrap" FontSize="24" TextAlignment="Center" />
+                <TextBlock Name="MeuiTextBlock" Text="Meui &lt;3 :))))))))" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" FontStyle="Italic" TextAlignment="Center"/>
+            </Grid>
+            <TextBlock Name="MailTextBlock" Text="www.xteamdimension.com" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" TextAlignment="Center" Margin="66,444,388,4" Width="322" Height="31" TextDecorations="Underline" Foreground="Black" Tap="MailTextBlock_Tap" />
+        </Grid>
+    </Grid>
+ 
+    <!--Codice di esempio che illustra l'utilizzo di ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Pulsante 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Pulsante 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 1"/>
+                <shell:ApplicationBarMenuItem Text="Voce di menu 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

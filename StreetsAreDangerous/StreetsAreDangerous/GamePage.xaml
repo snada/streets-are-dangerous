@@ -1,0 +1,51 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="StreetsAreDangerous.GamePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d" d:DesignHeight="480" d:DesignWidth="800"
+    shell:SystemTray.IsVisible="False" xmlns:my="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI">
+	<phone:PhoneApplicationPage.Resources>
+		<Storyboard x:Name="GameOverStoryBoard">
+			<DoubleAnimation Duration="0:0:0.5" To="420" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GameOverCanvas" d:IsOptimized="True"/>
+		</Storyboard>
+		<Storyboard x:Name="GoBackGameOverStoryBoard">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="GameOverCanvas">
+				<SplineDoubleKeyFrame KeyTime="0" Value="418"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</phone:PhoneApplicationPage.Resources>
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="393*" />
+        </Grid.RowDefinitions>
+        <!--<Button Content="Debug" Grid.Row="1" Height="74" HorizontalAlignment="Left" Margin="676,406,0,0" Name="debugButton" VerticalAlignment="Top" Width="124" Click="debugButton_Click" />-->
+        <Canvas x:Name="GameOverCanvas" Margin="124,-353,124,0" Height="349" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        	<Canvas.RenderTransform>
+        		<CompositeTransform/>
+        	</Canvas.RenderTransform>
+        	<Canvas.Background>
+        		<ImageBrush ImageSource="StatsMiniMenu.png"/>
+        	</Canvas.Background>
+        	<TextBlock x:Name="GameOverTextBlock" Height="42" TextWrapping="Wrap" Canvas.Top="22" Width="552" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" FontSize="26.667" Foreground="Black" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy"><Run Text="Game Over!"/><LineBreak/><Run/></TextBlock>
+        	<TextBlock x:Name="GameOverYourNameTextBlock" Height="32" TextWrapping="Wrap" Text="Your Name:" Canvas.Top="100" Width="250" TextAlignment="Center" Canvas.Left="8" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" Foreground="Black"/>
+        	<TextBox x:Name="GameOverNameTextBox" Height="75" Canvas.Left="258" TextWrapping="Wrap" Text="YourName" Canvas.Top="78" Width="286" KeyDown="GameOverNameTextBox_KeyDown" MaxLength="15" />
+        	<Button x:Name="GameOverBackButton" Content="Button" Height="78" Canvas.Left="207" Canvas.Top="263" Width="167" Click="GameOverBackButton_Click" BorderBrush="Transparent" Foreground="Black" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" >
+        		<Button.Background>
+        			<ImageBrush ImageSource="tasto2.png"/>
+        		</Button.Background>
+        	</Button>
+        	<TextBlock x:Name="GameOverTimeTextBlock" Height="52" Canvas.Left="8" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="207" Width="536" TextAlignment="Center" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" FontSize="48" Foreground="Black"/>
+        	<TextBlock x:Name="GameOverNoRecordTextBlock" Height="125" Canvas.Left="8" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="78" Width="536" FontFamily="/StreetsAreDangerous;component/Fonts/Fonts.zip#Andy" TextAlignment="Center" Foreground="Black" FontSize="48"/>
+        </Canvas>
+    </Grid>
+</phone:PhoneApplicationPage>

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreetsAreDangerous", "StreetsAreDangerous\StreetsAreDangerous\StreetsAreDangerous.csproj", "{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreetsAreDangerousLib", "StreetsAreDangerous\StreetsAreDangerousLib\StreetsAreDangerousLib.csproj", "{371D6D0B-E531-4415-9001-15429CBDBFA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreetsAreDangerousLibContent", "StreetsAreDangerous\StreetsAreDangerousLibContent\StreetsAreDangerousLibContent.contentproj", "{F0FD556F-8C72-456D-A1DD-4F18F11EF448}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Debug|Windows Phone.Build.0 = Debug|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Debug|Windows Phone.Deploy.0 = Debug|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Release|Mixed Platforms.Deploy.0 = Release|Any CPU
+		{9580A6FE-AFC9-49F5-B059-A92AD0F61B8B}.Release|Windows Phone.ActiveCfg = Release|Any CPU
+		{371D6D0B-E531-4415-9001-15429CBDBFA9}.Debug|Any CPU.ActiveCfg = Debug|Windows Phone
+		{371D6D0B-E531-4415-9001-15429CBDBFA9}.Debug|Mixed Platforms.ActiveCfg = Debug|Windows Phone
+		{371D6D0B-E531-4415-9001-15429CBDBFA9}.Debug|Mixed Platforms.Build.0 = Debug|Windows Phone
+		{371D6D0B-E531-4415-9001-15429CBDBFA9}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{371D6D0B-E531-4415-9001-15429CBDBFA9}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{371D6D0B-E531-4415-9001-15429CBDBFA9}.Release|Any CPU.ActiveCfg = Release|Windows Phone
+		{371D6D0B-E531-4415-9001-15429CBDBFA9}.Release|Mixed Platforms.ActiveCfg = Release|Windows Phone
+		{371D6D0B-E531-4415-9001-15429CBDBFA9}.Release|Mixed Platforms.Build.0 = Release|Windows Phone
+		{371D6D0B-E531-4415-9001-15429CBDBFA9}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{371D6D0B-E531-4415-9001-15429CBDBFA9}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{F0FD556F-8C72-456D-A1DD-4F18F11EF448}.Debug|Any CPU.ActiveCfg = Debug|Windows Phone
+		{F0FD556F-8C72-456D-A1DD-4F18F11EF448}.Debug|Mixed Platforms.ActiveCfg = Debug|Windows Phone
+		{F0FD556F-8C72-456D-A1DD-4F18F11EF448}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{F0FD556F-8C72-456D-A1DD-4F18F11EF448}.Release|Any CPU.ActiveCfg = Release|Windows Phone
+		{F0FD556F-8C72-456D-A1DD-4F18F11EF448}.Release|Mixed Platforms.ActiveCfg = Release|Windows Phone
+		{F0FD556F-8C72-456D-A1DD-4F18F11EF448}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

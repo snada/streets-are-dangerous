@@ -29,6 +29,8 @@ It was just me exploring 3D graphics, XNA and smartphone development for the fir
 
 Being a student of a Disney artist in an art academy, I decided to follow the path of the foolish cartoon-like style. I drawed, did clanup and inked every drawing in the game, by hand.
 
+I also modeled and textured with Blender the models.
+
 Most of the development was done at night, staying up until 2-3am after finishing university assignments.
 
 The game, by the way, is not finished. I had plans to add a lot of other features, and there are hints of this in the code.
@@ -36,7 +38,8 @@ I wanted to implement multiple difficulties, more obstacles, an online leaderboa
 
 Eventually, Windows Phone 7 was dropped by Microsoft not long after I started working on new features. SDK changed a lot after WP8 upgrade, XNA support was abandoned, with better and supported apps incoming. And... I kinda gave up.
 
-Also, why cardboard? I just had plenty in my house. And in the end, looked cool!
+Why cardboard? It gave me the "right" excuse for having the very simple 3D models you see in the game, as I'm no expert in that field.
+Also, I just had plenty in my house, and in the end, looked cool!
 
 ### <a name="description"></a> Description
 
@@ -65,7 +68,6 @@ The only things I asked someone for help are:
  - Sounds: [freesound.org](https://www.freesound.org/)
  - [Fontsquirrel](http://www.fontsquirrel.com/) for the free Andy font.
 
-(Yes, you got that, I'm not good with anything perceived by ears)
 
 ### <a name="screens"></a> Screenshots
 
